@@ -2,7 +2,7 @@ Summary:	A tool to customize advanced GNOME 3 options
 Summary(pl.UTF-8):	Narzędzie do dostosowywania zaawansowanych opcji GNOME 3
 Name:		gnome-tweak-tool
 Version:	3.0.0
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-tweak-tool/3.0/%{name}-%{version}.tar.bz2
@@ -10,11 +10,16 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-tweak-tool/3.0/%{name}-%{v
 Patch0:		pyc.patch
 URL:		http://live.gnome.org/GnomeTweakTool
 BuildRequires:	GConf2-devel
-BuildRequires:	gsettings-desktop-schemas-devel >= 2.91.91
+BuildRequires:	gettext-devel >= 0.17
+BuildRequires:	gsettings-desktop-schemas-devel >= 2.91.92
+BuildRequires:	intltool >= 0.40.0
 BuildRequires:	pkgconfig
+BuildRequires:	python >= 1:2.6
 BuildRequires:	python-pygobject-devel >= 2.28.0
-Requires:	gsettings-desktop-schemas >= 2.91.91
+BuildRequires:	rpmbuild(macros) >= 1.219
+Requires:	gsettings-desktop-schemas >= 2.91.92
 Requires:	gtk+3 >= 3.0.0
+Requires:	python >= 1:2.6
 Requires:	python-pygobject >= 2.28.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
