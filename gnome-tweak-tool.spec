@@ -1,12 +1,12 @@
 Summary:	A tool to customize advanced GNOME 3 options
 Summary(pl.UTF-8):	Narzędzie do dostosowywania zaawansowanych opcji GNOME 3
 Name:		gnome-tweak-tool
-Version:	3.0.4
+Version:	3.0.5
 Release:	1
 License:	GPL v3
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-tweak-tool/3.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	956d02d0c0613616b438017b07cbe3f0
+# Source0-md5:	a3595f33636f19eb319087562a9a5105
 Patch0:		pyc.patch
 URL:		http://live.gnome.org/GnomeTweakTool
 BuildRequires:	GConf2-devel
