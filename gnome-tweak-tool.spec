@@ -1,26 +1,30 @@
 Summary:	A tool to customize advanced GNOME 3 options
 Summary(pl.UTF-8):	Narzędzie do dostosowywania zaawansowanych opcji GNOME 3
 Name:		gnome-tweak-tool
-Version:	3.0.5
+Version:	3.2.0
 Release:	1
 License:	GPL v3
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-tweak-tool/3.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	a3595f33636f19eb319087562a9a5105
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-tweak-tool/3.2/%{name}-%{version}.tar.xz
+# Source0-md5:	49de6334c45e39ec52ec9225ef662476
 Patch0:		pyc.patch
 URL:		http://live.gnome.org/GnomeTweakTool
 BuildRequires:	GConf2-devel
 BuildRequires:	gettext-devel >= 0.17
-BuildRequires:	gsettings-desktop-schemas-devel >= 3.0.0
+BuildRequires:	gsettings-desktop-schemas-devel >= 3.2.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	pkgconfig
 BuildRequires:	python >= 1:2.6
-BuildRequires:	python-pygobject-devel >= 2.28.0
+BuildRequires:	python-pygobject3-devel >= 3.0.0
 BuildRequires:	rpmbuild(macros) >= 1.219
-Requires:	gsettings-desktop-schemas >= 3.0.0
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	xz
+Requires:	GConf2-libs
+Requires:	gobject-introspection
+Requires:	gsettings-desktop-schemas >= 3.2.0
 Requires:	gtk+3 >= 3.0.0
 Requires:	python >= 1:2.6
-Requires:	python-pygobject >= 2.28.0
+Requires:	python-pygobject3 >= 3.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
