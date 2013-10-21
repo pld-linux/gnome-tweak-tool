@@ -2,11 +2,11 @@ diff -urN gnome-tweak-tool-2.91.92/gtweak/tweakmodel.py gnome-tweak-tool-2.91.92
 --- gnome-tweak-tool-2.91.92/gtweak/tweakmodel.py	2011-03-09 20:33:40.000000000 +0000
 +++ gnome-tweak-tool-2.91.92.new//gtweak/tweakmodel.py	2011-03-19 12:46:22.703334424 +0000
 @@ -67,7 +67,7 @@
-         if 1:
-             tweak_files = [
-                     os.path.splitext(os.path.split(f)[-1])[0]
--                        for f in glob.glob(os.path.join(self._tweak_dir, "tweak_*.py"))]
-+                        for f in glob.glob(os.path.join(self._tweak_dir, "tweak_*.pyc"))]
-         else:
-             tweak_files = ["tweak_test"]
+     def load_tweaks(self, main_window):
+         tweak_files = [
+                 os.path.splitext(os.path.split(f)[-1])[0]
+-                    for f in glob.glob(os.path.join(self._tweak_dir, "tweak_group_*.py"))]
++                    for f in glob.glob(os.path.join(self._tweak_dir, "tweak_group_*.pyc"))]
  
+         if not gtweak.ENABLE_TEST:
+             try:
