@@ -75,5 +75,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{py_sitescriptdir}/gtweak/tweaks
 %{py_sitescriptdir}/gtweak/tweaks/*.py[co]
 %{_datadir}/gnome-tweak-tool
+%{_datadir}/appdata/gnome-tweak-tool.appdata.xml
 %{_desktopdir}/gnome-tweak-tool.desktop
 %{_iconsdir}/hicolor/*/*/*.png
