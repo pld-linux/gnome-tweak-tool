@@ -11,7 +11,7 @@ Patch0:		pyc.patch
 Patch1:		%{name}-import-gobject.patch
 URL:		http://live.gnome.org/GnomeTweakTool
 BuildRequires:	GConf2-devel
-BuildRequires:	gettext-devel >= 0.17
+BuildRequires:	gettext-tools >= 0.17
 BuildRequires:	gsettings-desktop-schemas-devel >= 3.4.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	pkgconfig
