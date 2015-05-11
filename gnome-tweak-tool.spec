@@ -1,12 +1,12 @@
 Summary:	A tool to customize advanced GNOME 3 options
 Summary(pl.UTF-8):	Narzędzie do dostosowywania zaawansowanych opcji GNOME 3
 Name:		gnome-tweak-tool
-Version:	3.16.1
+Version:	3.16.2
 Release:	1
 License:	GPL v3
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-tweak-tool/3.16/%{name}-%{version}.tar.xz
-# Source0-md5:	6b6513c019391b14c43e364caa2dafcb
+# Source0-md5:	8e56a73ddefe2ae6294b7f096c74fad0
 Patch0:		pyc.patch
 Patch1:		%{name}-import-gobject.patch
 URL:		http://live.gnome.org/GnomeTweakTool
@@ -70,6 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc NEWS README
 %attr(755,root,root) %{_bindir}/gnome-tweak-tool
+%attr(755,root,root) %{_libexecdir}/gnome-tweak-tool-lid-inhibitor
 %dir %{py_sitescriptdir}/gtweak
 %{py_sitescriptdir}/gtweak/*.py[co]
 %dir %{py_sitescriptdir}/gtweak/tweaks
@@ -78,3 +79,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/appdata/gnome-tweak-tool.appdata.xml
 %{_desktopdir}/gnome-tweak-tool.desktop
 %{_iconsdir}/hicolor/*/*/*.png
+%{_iconsdir}/hicolor/*/*/*.svg
